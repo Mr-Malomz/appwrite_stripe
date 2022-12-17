@@ -61,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         MaterialStateProperty.all<Color>(Color(0xff1C4ED8)),
                   ),
                   child: const Text(
-                    'Subcribe to newsletter',
+                    'Subcribe to newspaper',
                     style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
