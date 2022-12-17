@@ -36,19 +36,19 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Image(image: AssetImage('images/subscription.png')),
-            SizedBox(height: 20),
-            Text(
+            const Image(image: AssetImage('images/subscription.png')),
+            const SizedBox(height: 20),
+            const Text(
               'Manage subcription',
               style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
             ),
-            SizedBox(height: 20),
-            Text(
+            const SizedBox(height: 20),
+            const Text(
               'By subcribing to our service, we will deliver newspaper to you weekly',
               style: TextStyle(fontSize: 16),
               textAlign: TextAlign.center,
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: SizedBox(
@@ -71,7 +71,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
             ),
-            SizedBox(height: 5),
+            const SizedBox(height: 5),
             TextButton(
                 onPressed: () {},
                 child: const Text(
