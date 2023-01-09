@@ -64,9 +64,9 @@ class _MyHomePageState extends State<MyHomePage> {
     setState(() {
       _isFetching = true;
     });
-    UserService().createSubcription().then(
+    UserService().createSubscription().then(
       (value) {
-        UserService().subcribeUser(name).then((value) {
+        UserService().subscribeUser(name).then((value) {
           setState(() {
             _isFetching = false;
             user.is_subscribed = true;
@@ -97,7 +97,7 @@ class _MyHomePageState extends State<MyHomePage> {
     setState(() {
       _isFetching = true;
     });
-    UserService().unSubcribeUser(name).then((value) {
+    UserService().unSubscribeUser(name).then((value) {
       setState(() {
         _isFetching = false;
         user.is_subscribed = false;
@@ -140,13 +140,13 @@ class _MyHomePageState extends State<MyHomePage> {
                       const Image(image: AssetImage('images/subscription.png')),
                       const SizedBox(height: 20),
                       const Text(
-                        'Manage subcription',
+                        'Manage subscription',
                         style: TextStyle(
                             fontSize: 20.0, fontWeight: FontWeight.bold),
                       ),
                       const SizedBox(height: 20),
                       const Text(
-                        'By subcribing to our service, we will deliver newspaper to you weekly',
+                        'By subscribing to our service, we will deliver newspaper to you weekly',
                         style: TextStyle(fontSize: 16),
                         textAlign: TextAlign.center,
                       ),
@@ -170,7 +170,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                             Color(0xff1C4ED8)),
                                   ),
                                   child: const Text(
-                                    'Subcribe to newspaper',
+                                    'Subscribe to newspaper',
                                     style: TextStyle(
                                       color: Colors.white,
                                       fontWeight: FontWeight.bold,
@@ -189,7 +189,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                       _unsubscribe(user.name);
                                     },
                               child: const Text(
-                                'Unsubcribe',
+                                'Unsubscribe',
                                 style: TextStyle(
                                     fontSize: 16,
                                     color: Colors.black87,

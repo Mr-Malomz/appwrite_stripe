@@ -32,7 +32,7 @@ class UserService {
     }
   }
 
-  Future createSubcription() async {
+  Future createSubscription() async {
     Functions functions = Functions(client);
     try {
       var result =
@@ -56,7 +56,7 @@ class UserService {
     }
   }
 
-  Future subcribeUser(String name) async {
+  Future subscribeUser(String name) async {
     try {
       User updateUser = User(name: name, is_subscribed: true);
       var data = await db?.updateDocument(
@@ -71,7 +71,7 @@ class UserService {
     }
   }
 
-  Future unSubcribeUser(String name) async {
+  Future unSubscribeUser(String name) async {
     try {
       User updateUser = User(name: name, is_subscribed: false);
       var data = await db?.updateDocument(
